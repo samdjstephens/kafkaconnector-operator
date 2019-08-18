@@ -1,0 +1,4 @@
+apiVersion: sdjs.dev/v1
+kind: KafkaConnector
+metadata:
+  name: kafkaconnector-example

@@ -1,0 +1,17 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: kafkaconnectors.sdjs.dev
+spec:
+  scope: Namespaced
+  group: sdjs.dev
+  versions:
+    - name: v1
+      served: true
+      storage: true
+  names:
+    kind: KafkaConnector
+    plural: kafkaconnectors
+    singular: kafkaconnector
+    shortNames:
+      - kc
