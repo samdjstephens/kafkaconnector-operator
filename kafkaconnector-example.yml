@@ -2,3 +2,9 @@ apiVersion: sdjs.dev/v1
 kind: KafkaConnector
 metadata:
   name: kafkaconnector-example
+spec:
+  config:
+    connector_class: 'FileStreamSink'
+    tasks_max: '1'
+    file: '/tmp/test.sink.txt'
+    topics: 'connect-test'
